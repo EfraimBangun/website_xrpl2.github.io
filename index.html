@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WEBSITE.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+	<link rel="stylesheet" href="gbr.css">
+  <style>
+    body {
+	     background-image:url('123.png');
+		 background-repeat:no-repeat;
+		 background-size:cover;
+		 background-attachment:fixed;
+	
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .jumbotron {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 100px;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .jumbotron p {
+      font-size: 24px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .feature {
+      text-align: center;
+      margin: 0 30px;
+    }
+
+    .feature img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    .feature h3 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Website X RPL 2</h1>
+  </header>
+  
+   <div id="container" onScroll="myFunction()">
+   
+<div class="header">
+    
+            <h1>WELCOME TO MY WEBSITE </h1>
+			<h1>X RPL 2</h1>
+            
+        </div>
+
+        <div class="topnav" id="navbar">
+            <div>
+			    <a href="#s-RPL" id="RPL">Pengertian RPL</a>
+                <a href="#s-about" id="about">NAMA WALI KELAS</a>
+                <a href="#s-Galeri" id="Galeri">Galeri</a>
+            </div>
+           
+        </div>
+		
+		    <div class="section-head" id="s-RPL">
+            <h1>PENGERTIAN RPL</h1>
+        </div>
+           
+		     <section class="section-1">
+            <div class="row">
+                <div class="s-card">
+                    <div class="s-card-img">
+                    </div>
+                    <div class="s-card-content">
+                        
+                        <h3><p>Rekayasa Perangkat Lunak atau biasa disingkat dengan RPL adalah salah satu bidang profesi dan juga mata pelajaran yang mempelajari tentang pengembangan perangkat-perangkat lunak termasuk dalam hal pembuatannya, pemeliharaan hingga manajemen organisasi dan manajemen kualitasnya. Bisa dikatakan RPL ini merupakan sebuah perubahan yang terjadi pada perangkat lunak guna melakukan pengembangan, pemeliharaan, dan pembangunan kembali dengan menerapkan prinsip rekayasa sehingga memperoleh perangkat lunak yang bisa bekerja secara lebih efisien dan efektif pada user nantinya.</p></h3>
+                    </div>
+                </div>
+				
+   <div class="section-head" id="s-about">
+            <h1>Nama Wali Kelas X RPL 2</h1>
+        </div>
+
+        <section class="section-2">
+            <div class="row">
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <figure>
+                            <img src="https://pps.whatsapp.net/v/t61.24694-24/339590302_530787472573666_4550945447009617317_n.jpg?ccb=11-4&oh=01_AdQnp-mw8f1RGfMqZ8iX7byUu1h0TI36_NvBxeWzl8KptA&oe=6495390E">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="s-card-content">
+                        <h2><strong>Senty Liastanova S.Kom</strong></h2>
+                        <p><br>
+						
+                        </p>
+                    </div>
+                </div>
+				
+	
+	 <div class="section-head" id="s-Galeri">
+            <h1>Galeri X RPL 2</h1>
+        </div>        
+		<div class="container">
+		<div class="image-container">
+		        <div class="image"><img src="image/1.jpg" alt=""></div>
+                <div class="image"><img src="image/2.jpg" alt=""></div>
+			    <div class="image"><img src="image/3.jpg" alt=""></div>
+			  
+			</div>	 
+			<div class="popup-imag">
+			<span>&times;</span> 
+			    <img src ="image/4.jpg" alt="">
+          </div>
+		  <script>
+		  
+			document.querySelectorAll('image-container img').forEach(image=>{
+		    image.onclick = ()=>{
+			  document.querySelector('.popup-image').style.display ='block';
+			   document.querySelector('.popup-image img').src = image.getAttribute('src');
+		  });
+		   document.querySelector('popup-image span').onclick = () =>{
+		   			  document.querySelector('.popup-image').style.display ='none';
+					  }
+		  </script>
+        <button onclick="topFunction()" id="myBtn" title="Yukarı Çık">Kembali Keatas</button>
+    </div>
+    <script src="WEBSITE.js"></script>
+	
+  <footer>
+    <p>Hak Cipta &copy; X RPL 2.</p>
+  </footer>
+</body>
+</html>
